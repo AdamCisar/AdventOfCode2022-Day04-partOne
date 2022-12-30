@@ -27,11 +27,11 @@ public class Main {
 				int secondX = Integer.valueOf(secondPair[0]);
 				int secondY = Integer.valueOf(secondPair[1]);
 				
-				if(firstX >= secondX && firstX <= secondY && firstY >= secondX && firstY <= secondY) {
+				if(firstX >= secondX && firstX <= secondY || firstY >= secondX && firstY <= secondY) {
 					result++;
 				}
 				
-				if(secondX >= firstX && secondX <= firstY && secondY >= firstX && secondY <= firstY) {
+				if(secondX >= firstX && secondX <= firstY || secondY >= firstX && secondY <= firstY) {
 					result++;
 				}
 			
