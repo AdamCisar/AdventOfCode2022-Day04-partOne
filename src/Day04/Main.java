@@ -27,6 +27,8 @@ public class Main {
 				int secondX = Integer.valueOf(secondPair[0]);
 				int secondY = Integer.valueOf(secondPair[1]);
 				
+				//  && changed to ||
+				
 				if(firstX >= secondX && firstX <= secondY || firstY >= secondX && firstY <= secondY) {
 					result++;
 				}
